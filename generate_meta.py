@@ -56,8 +56,8 @@ import numpy as np
 
 from docopt import docopt
 
-from spinorama import ray_setup_logger
-from spinorama.constant_paths import flags_ADD_HASH
+from src.spinorama import ray_setup_logger
+from src.spinorama.constant_paths import flags_ADD_HASH
 
 try:
     import ray
@@ -77,10 +77,10 @@ from generate_common import (
     #    find_metadata_file,
 )
 import spinorama.constant_paths as cpaths
-from spinorama.compute_estimates import estimates
-from spinorama.compute_scores import speaker_pref_rating
-from spinorama.filter_peq import peq_preamp_gain
-from spinorama.load_rew_eq import parse_eq_iir_rews
+from src.spinorama.compute_estimates import estimates
+from src.spinorama.compute_scores import speaker_pref_rating
+from src.spinorama.filter_peq import peq_preamp_gain
+from src.spinorama.load_rew_eq import parse_eq_iir_rews
 
 from datas import metadata
 

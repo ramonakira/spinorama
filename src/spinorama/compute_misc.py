@@ -23,15 +23,15 @@ import numpy.typing as npt
 import pandas as pd
 from scipy import stats
 
-from spinorama import logger
-from spinorama.constant_paths import (
+from src.spinorama import logger
+from src.spinorama.constant_paths import (
     SLOPE_MIN_FREQ,
     SLOPE_MAX_FREQ,
     DIRECTIVITY_MIN_FREQ,
     DIRECTIVITY_MAX_FREQ,
 )
-from spinorama.misc import sort_angles
-from spinorama.compute_scores import octave
+from src.spinorama.misc import sort_angles
+from src.spinorama.compute_scores import octave
 
 # pd.set_option('display.max_rows', None)
 

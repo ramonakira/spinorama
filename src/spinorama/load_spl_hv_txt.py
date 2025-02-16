@@ -21,9 +21,9 @@ import glob
 import pandas as pd
 
 from datas.incomplete import known_incomplete_measurements
-from spinorama import logger
-from spinorama.ltype import StatusOr
-from spinorama.misc import sort_angles, measurements_missing_angles
+from src.spinorama import logger
+from src.spinorama.ltype import StatusOr
+from src.spinorama.misc import sort_angles, measurements_missing_angles
 
 
 def parse_graph_spl_find_file(dirpath: str, orientation: str) -> StatusOr[list[str]]:

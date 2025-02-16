@@ -26,13 +26,13 @@ try:
 except ModuleNotFoundError:
     import src.miniray as ray
 
-from spinorama import logger, ray_setup_logger
-from spinorama.constant_paths import CPATH_DIST_SPEAKERS, DEFAULT_FREQ_RANGE
-from spinorama.ltype import DataSpeaker
-from spinorama.misc import measurements_valid_freq_range, write_multiformat
-from spinorama.filter_peq import Peq, peq_preamp_gain
-from spinorama.compute_misc import compute_minmax_slopes
-from spinorama.plot import (
+from src.spinorama import logger, ray_setup_logger
+from src.spinorama.constant_paths import CPATH_DIST_SPEAKERS, DEFAULT_FREQ_RANGE
+from src.spinorama.ltype import DataSpeaker
+from src.spinorama.misc import measurements_valid_freq_range, write_multiformat
+from src.spinorama.filter_peq import Peq, peq_preamp_gain
+from src.spinorama.compute_misc import compute_minmax_slopes
+from src.spinorama.plot import (
     plot_params_default,
     contour_params_default,
     radar_params_default,

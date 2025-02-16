@@ -24,10 +24,10 @@ import warnings
 import pandas as pd
 import pytest
 
-from spinorama.load import parse_graphs_speaker, parse_eq_speaker
+from src.spinorama.load import parse_graphs_speaker, parse_eq_speaker
 from tests.test_common import EXPECTED_FULL_SET, EXPECTED_LIMITED_SET, EXPECTED_PARTIAL_SET
 
-from spinorama.speaker import (
+from src.spinorama.speaker import (
     display_spinorama,
     display_spinorama_normalized,
     display_onaxis,
@@ -52,7 +52,7 @@ from spinorama.speaker import (
     display_radar_vertical,
 )
 
-from spinorama.plot import (
+from src.spinorama.plot import (
     plot_params_default,
     contour_params_default,
     radar_params_default,

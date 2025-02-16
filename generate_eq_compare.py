@@ -38,11 +38,11 @@ from docopt import docopt
 import numpy as np
 
 from generate_common import get_custom_logger, args2level, find_metadata_file
-from spinorama.constant_paths import CPATH_DIST_SPEAKERS, CPATH_DATAS_EQ
-from spinorama.misc import need_update
-from spinorama.speaker import write_multiformat
-from spinorama.plot import plot_eqs
-from spinorama.load_rew_eq import parse_eq_iir_rews
+from src.spinorama.constant_paths import CPATH_DIST_SPEAKERS, CPATH_DATAS_EQ
+from src.spinorama.misc import need_update
+from src.spinorama.speaker import write_multiformat
+from src.spinorama.plot import plot_eqs
+from src.spinorama.load_rew_eq import parse_eq_iir_rews
 
 
 VERSION = 0.2

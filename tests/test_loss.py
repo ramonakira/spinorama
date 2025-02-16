@@ -23,9 +23,9 @@ import math
 
 import numpy as np
 
-from spinorama.filter_iir import Biquad
-from spinorama.filter_peq import peq_spl
-from spinorama.auto_loss import loss
+from src.spinorama.filter_iir import Biquad
+from src.spinorama.filter_peq import peq_spl
+from src.spinorama.auto_loss import loss
 
 
 class LossTests(unittest.TestCase):

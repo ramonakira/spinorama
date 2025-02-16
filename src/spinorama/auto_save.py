@@ -26,19 +26,19 @@ import pathlib
 
 import ray
 
-from spinorama import logger, ray_setup_logger
-from spinorama.ltype import DataSpeaker, OptimResult
-from spinorama.constant_paths import CPATH_DIST_SPEAKERS
-from spinorama.load_rew_eq import parse_eq_iir_rews
-from spinorama.filter_peq import peq_format_apo, Peq
-from spinorama.filter_scores import (
+from src.spinorama import logger, ray_setup_logger
+from src.spinorama.ltype import DataSpeaker, OptimResult
+from src.spinorama.constant_paths import CPATH_DIST_SPEAKERS
+from src.spinorama.load_rew_eq import parse_eq_iir_rews
+from src.spinorama.filter_peq import peq_format_apo, Peq
+from src.spinorama.filter_scores import (
     scores_apply_filter,
     scores_print,
 )
-from spinorama.speaker import write_multiformat
-from spinorama.auto_target import get_freq, get_target
-from spinorama.auto_plot import graph_results as auto_graph_results
-from spinorama.auto_strategy import optim_strategy
+from src.spinorama.speaker import write_multiformat
+from src.spinorama.auto_target import get_freq, get_target
+from src.spinorama.auto_plot import graph_results as auto_graph_results
+from src.spinorama.auto_strategy import optim_strategy
 
 
 def get_previous_score(eq_name: str) -> None | float:

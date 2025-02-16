@@ -22,11 +22,11 @@ import pandas as pd
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
-from spinorama.constant_paths import MIDRANGE_MIN_FREQ, MIDRANGE_MAX_FREQ, DEFAULT_FREQ_RANGE
-from spinorama.misc import graph_unmelt
-from spinorama.filter_peq import peq_spl, peq_preamp_gain
-from spinorama.compute_misc import savitzky_golay, compute_statistics
-from spinorama.plot import (
+from src.spinorama.constant_paths import MIDRANGE_MIN_FREQ, MIDRANGE_MAX_FREQ, DEFAULT_FREQ_RANGE
+from src.spinorama.misc import graph_unmelt
+from src.spinorama.filter_peq import peq_spl, peq_preamp_gain
+from src.spinorama.compute_misc import savitzky_golay, compute_statistics
+from src.spinorama.plot import (
     colors,
     plot_spinorama_traces,
     plot_graph_regression_traces,

@@ -24,13 +24,13 @@ import pandas as pd
 
 from datas.grapheq import vendor_info as grapheq_db
 
-from spinorama import logger
-from spinorama.ltype import Vector
-from spinorama.filter_iir import Biquad
-from spinorama.filter_peq import Peq, peq_spl
-from spinorama.auto_loss import score_loss
-from spinorama.auto_target import optim_compute_auto_target
-from spinorama.auto_preflight import optim_preflight
+from src.spinorama import logger
+from src.spinorama.ltype import Vector
+from src.spinorama.filter_iir import Biquad
+from src.spinorama.filter_peq import Peq, peq_spl
+from src.spinorama.auto_loss import score_loss
+from src.spinorama.auto_target import optim_compute_auto_target
+from src.spinorama.auto_preflight import optim_preflight
 
 
 def optim_grapheq(

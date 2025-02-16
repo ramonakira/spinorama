@@ -22,10 +22,10 @@ import numpy as np
 import pandas as pd
 from scipy.io import loadmat
 
-from spinorama import logger
-from spinorama.ltype import StatusOr
-from spinorama.misc import sort_angles
-from spinorama.compute_misc import resample
+from src.spinorama import logger
+from src.spinorama.ltype import StatusOr
+from src.spinorama.misc import sort_angles
+from src.spinorama.compute_misc import resample
 
 
 def parse_graph_freq_princeton_mat(

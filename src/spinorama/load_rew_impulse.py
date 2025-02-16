@@ -18,7 +18,7 @@
 
 import math
 
-from spinorama import logger
+from src.spinorama import logger
 
 
 def parse_impulse_rews(filename, srate):

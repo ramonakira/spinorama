@@ -18,8 +18,8 @@
 
 import pandas as pd
 
-from spinorama import logger
-from spinorama.ltype import Vector
+from src.spinorama import logger
+from src.spinorama.ltype import Vector
 
 
 def optim_preflight(

@@ -21,7 +21,7 @@ import numpy as np
 
 from frozendict import frozendict
 
-from spinorama.ltype import Vector
+from src.spinorama.ltype import Vector
 
 
 def bw2q(bw: float) -> float:

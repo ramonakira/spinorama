@@ -22,18 +22,18 @@ import numpy as np
 import pandas as pd
 from scipy.stats import linregress
 
-from spinorama import logger
-from spinorama.ltype import Vector, DataSpeaker
-from spinorama.compute_cea2034 import sp_weigths, estimated_inroom_hv
-from spinorama.compute_scores import octave
-from spinorama.filter_peq import Peq, peq_spl
-from spinorama.filter_scores import scores_apply_filter
-from spinorama.filter_peq import peq_apply_measurements
-from spinorama.misc import graph_melt
-from spinorama.auto_misc import have_full_measurements
+from src.spinorama import logger
+from src.spinorama.ltype import Vector, DataSpeaker
+from src.spinorama.compute_cea2034 import sp_weigths, estimated_inroom_hv
+from src.spinorama.compute_scores import octave
+from src.spinorama.filter_peq import Peq, peq_spl
+from src.spinorama.filter_scores import scores_apply_filter
+from src.spinorama.filter_peq import peq_apply_measurements
+from src.spinorama.misc import graph_melt
+from src.spinorama.auto_misc import have_full_measurements
 
 # cython import
-from spinorama.c_compute_scores import c_cea2034, c_score_peq_approx
+from src.spinorama.c_compute_scores import c_cea2034, c_score_peq_approx
 
 # ------------------------------------------------------------------------------
 # lots of variables for the fast computations on scores in python

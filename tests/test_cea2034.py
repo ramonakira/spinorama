@@ -24,16 +24,16 @@ import numpy as np
 import pandas as pd
 import scipy.io
 
-from spinorama.misc import graph_melt
-from spinorama.load_klippel import parse_graph_freq_klippel
-from spinorama.compute_cea2034 import (
+from src.spinorama.misc import graph_melt
+from src.spinorama.load_klippel import parse_graph_freq_klippel
+from src.spinorama.compute_cea2034 import (
     compute_cea2034,
     early_reflections,
     vertical_reflections,
     horizontal_reflections,
     estimated_inroom_hv,
 )
-from spinorama.auto_loss import score_loss
+from src.spinorama.auto_loss import score_loss
 
 
 pd.set_option("display.max_rows", 202)

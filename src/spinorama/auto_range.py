@@ -23,9 +23,9 @@ import numpy as np
 import scipy.signal as sig
 from scipy.interpolate import InterpolatedUnivariateSpline
 
-from spinorama import logger
-from spinorama.ltype import Vector, Zone
-from spinorama.filter_peq import Peq
+from src.spinorama import logger
+from src.spinorama.ltype import Vector, Zone
+from src.spinorama.filter_peq import Peq
 
 # ------------------------------------------------------------------------------
 # find initial values for biquads

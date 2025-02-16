@@ -22,7 +22,7 @@ import math
 import numpy as np
 import pandas as pd
 
-from spinorama import logger
+from src.spinorama import logger
 
 
 def compute_area_q(alpha_d: float, beta_d: float) -> float:

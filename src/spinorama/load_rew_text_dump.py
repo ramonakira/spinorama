@@ -18,8 +18,8 @@
 
 import pandas as pd
 
-from spinorama import logger
-from spinorama.ltype import StatusOr
+from src.spinorama import logger
+from src.spinorama.ltype import StatusOr
 
 
 def parse_graphs_speaker_rew_text_dump(

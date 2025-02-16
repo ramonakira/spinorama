@@ -23,19 +23,19 @@ import unittest
 import numpy as np
 import numpy.testing as npt
 
-from spinorama.compute_misc import unify_freq
-from spinorama.filter_iir import Biquad
-from spinorama.filter_scores import scores_apply_filter, noscore_apply_filter
-from spinorama.misc import graph_melt, graph_unmelt
-from spinorama.load_rew_eq import parse_eq_iir_rews
-from spinorama.load_klippel import parse_graphs_speaker_klippel
-from spinorama.load_rew_text_dump import parse_graphs_speaker_rew_text_dump
-from spinorama.load import (
+from src.spinorama.compute_misc import unify_freq
+from src.spinorama.filter_iir import Biquad
+from src.spinorama.filter_scores import scores_apply_filter, noscore_apply_filter
+from src.spinorama.misc import graph_melt, graph_unmelt
+from src.spinorama.load_rew_eq import parse_eq_iir_rews
+from src.spinorama.load_klippel import parse_graphs_speaker_klippel
+from src.spinorama.load_rew_text_dump import parse_graphs_speaker_rew_text_dump
+from src.spinorama.load import (
     filter_graphs,
     filter_graphs_partial,
     spin_compute_di_eir,
 )
-from spinorama.load import (
+from src.spinorama.load import (
     filter_graphs,
     filter_graphs_partial,
 )

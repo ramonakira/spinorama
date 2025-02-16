@@ -24,7 +24,7 @@ from more_itertools import consecutive_groups
 from numpy import floating
 from scipy.stats import linregress
 
-from spinorama import logger
+from src.spinorama import logger
 
 
 def round_down(x: float | np.floating, decimals: int) -> float:

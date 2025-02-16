@@ -16,12 +16,12 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-from spinorama.ltype import Vector, OptimResult
-from spinorama.filter_peq import Peq
-from spinorama import logger
-from spinorama.auto_geq import optim_grapheq
-from spinorama.auto_greedy import optim_greedy
-from spinorama.auto_global import GlobalOptimizer
+from src.spinorama.ltype import Vector, OptimResult
+from src.spinorama.filter_peq import Peq
+from src.spinorama import logger
+from src.spinorama.auto_geq import optim_grapheq
+from src.spinorama.auto_greedy import optim_greedy
+from src.spinorama.auto_global import GlobalOptimizer
 
 
 def optim_multi_steps(

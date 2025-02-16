@@ -31,16 +31,16 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import plotly.io as pio
 
-from spinorama import logger
-from spinorama.constant_paths import (
+from src.spinorama import logger
+from src.spinorama.constant_paths import (
     MIDRANGE_MIN_FREQ,
     MIDRANGE_MAX_FREQ,
     SLOPE_MIN_FREQ,
     SLOPE_MAX_FREQ,
 )
-from spinorama.filter_peq import peq_spl
-from spinorama.compute_misc import compute_contour, compute_slope_smoothness
-from spinorama.misc import sort_angles
+from src.spinorama.filter_peq import peq_spl
+from src.spinorama.compute_misc import compute_contour, compute_slope_smoothness
+from src.spinorama.misc import sort_angles
 
 FLAG_FEATURE_TREND_LINES = True
 FLAG_FEATURE_CONFIDENCE_ZONES = True

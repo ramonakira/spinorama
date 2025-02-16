@@ -69,9 +69,9 @@ from generate_common import (
 )
 from datas import metadata, Symmetry, Parameters
 from datas.helpers import measurement2distance
-from spinorama.load import parse_graphs_speaker, parse_eq_speaker
-from spinorama.speaker import print_graphs
-from spinorama.plot import plot_params_default
+from src.spinorama.load import parse_graphs_speaker, parse_eq_speaker
+from src.spinorama.speaker import print_graphs
+from src.spinorama.plot import plot_params_default
 
 
 VERSION = "2.05"

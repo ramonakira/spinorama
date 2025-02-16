@@ -17,7 +17,7 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import pandas as pd
-from spinorama.compute_estimates import estimates_spin
+from src.spinorama.compute_estimates import estimates_spin
 
 
 def get3db(spin: dict[str, pd.DataFrame], db_point: float) -> tuple[bool, float]:

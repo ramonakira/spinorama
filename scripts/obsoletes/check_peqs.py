@@ -38,9 +38,9 @@ from docopt import docopt
 import numpy as np
 
 from generate_common import get_custom_logger, args2level
-from spinorama.constant_paths import CPATH_METADATA_JSON, CPATH_DATAS_EQ
-from spinorama.load_rew_eq import parse_eq_iir_rews
-from spinorama.filter_peq import peq_spl
+from src.spinorama.constant_paths import CPATH_METADATA_JSON, CPATH_DATAS_EQ
+from src.spinorama.load_rew_eq import parse_eq_iir_rews
+from src.spinorama.filter_peq import peq_spl
 
 
 VERSION = 0.1

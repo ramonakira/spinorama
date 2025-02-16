@@ -24,11 +24,11 @@ import unittest
 import numpy as np
 import pandas as pd
 
-from spinorama.misc import graph_melt, measurements_complete_freq, measurements_complete_spl
+from src.spinorama.misc import graph_melt, measurements_complete_freq, measurements_complete_spl
 
-from spinorama.compute_misc import unify_freq
+from src.spinorama.compute_misc import unify_freq
 
-from spinorama.load_rew_text_dump import parse_graphs_speaker_rew_text_dump
+from src.spinorama.load_rew_text_dump import parse_graphs_speaker_rew_text_dump
 
 
 class SpinoramaUnifyFreqTests(unittest.TestCase):

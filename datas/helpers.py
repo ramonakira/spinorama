@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from . import Measurement, Speaker
-from spinorama import logger
+from src.spinorama import logger
 
 
 def measurement2distance(speaker_name: str, m: Measurement) -> float:

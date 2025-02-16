@@ -18,9 +18,9 @@
 
 import math
 
-from spinorama import logger
-from spinorama.filter_iir import bw2q, Biquad
-from spinorama.filter_peq import Peq
+from src.spinorama import logger
+from src.spinorama.filter_iir import bw2q, Biquad
+from src.spinorama.filter_peq import Peq
 
 # TODO(pierre): max rgain and max Q should be in parameters
 INPUT_MAX_GAIN = 30

@@ -22,20 +22,20 @@ import unittest
 
 import pandas as pd
 
-from spinorama.misc import (
+from src.spinorama.misc import (
     graph_unmelt,
     measurements_complete_freq,
     measurements_complete_spl,
     measurements_valid_freq_range,
     sort_angles,
 )
-from spinorama.load_klippel import parse_graph_freq_klippel, parse_graphs_speaker_klippel
-from spinorama.load_princeton import parse_graph_princeton, parse_graphs_speaker_princeton
-from spinorama.load_spl_hv_txt import parse_graphs_speaker_spl_hv_txt
-from spinorama.load_gll_hv_txt import parse_graphs_speaker_gll_hv_txt
-from spinorama.load_rew_text_dump import parse_graphs_speaker_rew_text_dump
-from spinorama.load_webplotdigitizer import parse_graphs_speaker_webplotdigitizer
-from spinorama.load import (
+from src.spinorama.load_klippel import parse_graph_freq_klippel, parse_graphs_speaker_klippel
+from src.spinorama.load_princeton import parse_graph_princeton, parse_graphs_speaker_princeton
+from src.spinorama.load_spl_hv_txt import parse_graphs_speaker_spl_hv_txt
+from src.spinorama.load_gll_hv_txt import parse_graphs_speaker_gll_hv_txt
+from src.spinorama.load_rew_text_dump import parse_graphs_speaker_rew_text_dump
+from src.spinorama.load_webplotdigitizer import parse_graphs_speaker_webplotdigitizer
+from src.spinorama.load import (
     symmetrise_speaker_measurements,
 )
 from tests.test_common import (

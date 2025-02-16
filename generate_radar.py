@@ -38,7 +38,7 @@ import pathlib
 from docopt import docopt
 import plotly.graph_objects as go
 
-from spinorama.speaker import write_multiformat
+from src.spinorama.speaker import write_multiformat
 
 from generate_common import (
     get_custom_logger,
@@ -48,9 +48,9 @@ from generate_common import (
     find_metadata_file,
 )
 
-from spinorama.constant_paths import CPATH_DIST_SPEAKERS, CPATH_DATAS_EQ
-from spinorama.filter_scores import scores_apply_filter, noscore_apply_filter
-from spinorama.load_rew_eq import parse_eq_iir_rews
+from src.spinorama.constant_paths import CPATH_DIST_SPEAKERS, CPATH_DATAS_EQ
+from src.spinorama.filter_scores import scores_apply_filter, noscore_apply_filter
+from src.spinorama.load_rew_eq import parse_eq_iir_rews
 
 VERSION = 0.2
 

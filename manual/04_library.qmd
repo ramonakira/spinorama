@@ -16,12 +16,12 @@ import pandas as pd
 import plotly as plt
 ```
 
-Then some specific functions from Spinorama:
+Then some specific functions from src.spinorama:
 
 ```{python}
-from spinorama.load_spl_hv_txt import parse_graph_spl_hv_txt
-from spinorama.load import filter_graphs
-from spinorama.constant_paths import MEAN_MIN, MEAN_MAX, DEFAULT_FREQ_RANGE
+from src.spinorama.load_spl_hv_txt import parse_graph_spl_hv_txt
+from src.spinorama.load import filter_graphs
+from src.spinorama.constant_paths import MEAN_MIN, MEAN_MAX, DEFAULT_FREQ_RANGE
 ```
 
 ### Loading a dataset in text format
@@ -50,14 +50,14 @@ df = filter_graphs(speaker, spl_H, spl_V, MEAN_MIN, MEAN_MAX, mformat=mformat, m
 ### Computing the spinorama (CEA2034)
 
 ```{python}
-from spinorama.compute_cea2034 import compute_cea2034
+from src.spinorama.compute_cea2034 import compute_cea2034
 # compute the spin
 spin = compute_cea2034(df['SPL Horizontal_unmelted'], df['SPL Vertical_unmelted'])
 ```
 
 ### Computing classical values for this speaker
 ```{python}
-from spinorama.compute_estimates import estimates
+from src.spinorama.compute_estimates import estimates
 # compute the spin
 spin = compute_cea2034(df['SPL Horizontal_unmelted'], df['SPL Vertical_unmelted'])
 properties = estimates(spin, df['SPL Horizontal_unmelted'], df['SPL Vertical_unmelted'])
@@ -74,15 +74,15 @@ properties
 
 #### Compute the PIR (Predicted In-Room Response)
 ```{python}
-from spinorama.compute_cea2034 import estimated_inroom_hv
+from src.spinorama.compute_cea2034 import estimated_inroom_hv
 pir = estimated_inroom_hv(df['SPL Horizontal_unmelted'], df['SPL Vertical_unmelted'])
 ```
 
 #### Compute the PIR (Predicted In-Room Response)
 ```{python}
-from spinorama.load import graph_melt, graph_unmelt
-from spinorama.compute_cea2034 import compute_cea2034, estimated_inroom_hv
-from spinorama.compute_scores import speaker_pref_rating
+from src.spinorama.load import graph_melt, graph_unmelt
+from src.spinorama.compute_cea2034 import compute_cea2034, estimated_inroom_hv
+from src.spinorama.compute_scores import speaker_pref_rating
 spin = compute_cea2034(df['SPL Horizontal_unmelted'], df['SPL Vertical_unmelted'])
 pir = estimated_inroom_hv(df['SPL Horizontal_unmelted'], df['SPL Vertical_unmelted'])
 scores = speaker_pref_rating(graph_melt(spin), graph_melt(pir), rounded=True)

@@ -35,9 +35,9 @@ import tables
 
 import datas.metadata as metadata
 
-from spinorama import ray_setup_logger
+from src.spinorama import ray_setup_logger
 import spinorama.constant_paths as cpaths
-from spinorama.constant_paths import flags_ADD_HASH
+from src.spinorama.constant_paths import flags_ADD_HASH
 
 MINIRAY = None
 try:

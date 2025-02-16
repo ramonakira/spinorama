@@ -28,7 +28,7 @@ from wand.exceptions import CoderError
 from datas import Measurement
 from datas.metadata import speakers_info
 from datas.helpers import measurement_valid_freq
-from spinorama import logger
+from src.spinorama import logger
 
 
 def graph_melt(df_in: pd.DataFrame) -> pd.DataFrame:

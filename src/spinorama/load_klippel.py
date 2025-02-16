@@ -21,9 +21,9 @@ import os
 
 import pandas as pd
 
-from spinorama import logger
-from spinorama.ltype import StatusOr
-from spinorama.misc import sort_angles
+from src.spinorama import logger
+from src.spinorama.ltype import StatusOr
+from src.spinorama.misc import sort_angles
 
 locale.setlocale(locale.LC_ALL, "en_US.UTF-8")
 

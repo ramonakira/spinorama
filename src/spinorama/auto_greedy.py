@@ -19,20 +19,20 @@
 import numpy as np
 import pandas as pd
 
-from spinorama import logger
-from spinorama.ltype import Vector
-from spinorama.filter_iir import Biquad
-from spinorama.filter_peq import Peq
-from spinorama.auto_loss import loss, score_loss
-from spinorama.auto_range import (
+from src.spinorama import logger
+from src.spinorama.ltype import Vector
+from src.spinorama.filter_iir import Biquad
+from src.spinorama.filter_peq import Peq
+from src.spinorama.auto_loss import loss, score_loss
+from src.spinorama.auto_range import (
     propose_range_freq,
     propose_range_q,
     propose_range_db_gain,
     propose_range_biquad,
 )
-from spinorama.auto_biquad import find_best_biquad, find_best_peak
-from spinorama.auto_target import optim_compute_auto_target
-from spinorama.auto_preflight import optim_preflight
+from src.spinorama.auto_biquad import find_best_biquad, find_best_peak
+from src.spinorama.auto_target import optim_compute_auto_target
+from src.spinorama.auto_preflight import optim_preflight
 
 
 def optim_greedy(

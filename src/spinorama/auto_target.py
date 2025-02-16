@@ -21,11 +21,11 @@ import numpy as np
 import pandas as pd
 from scipy.stats import linregress
 
-from spinorama import logger
-from spinorama.ltype import Vector
-from spinorama.misc import graph_unmelt
-from spinorama.filter_peq import Peq, peq_spl
-from spinorama.compute_misc import savitzky_golay
+from src.spinorama import logger
+from src.spinorama.ltype import Vector
+from src.spinorama.misc import graph_unmelt
+from src.spinorama.filter_peq import Peq, peq_spl
+from src.spinorama.compute_misc import savitzky_golay
 
 
 # ------------------------------------------------------------------------------

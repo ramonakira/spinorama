@@ -23,8 +23,8 @@ import os
 import pandas as pd
 import tarfile
 
-from spinorama import logger
-from spinorama.ltype import StatusOr
+from src.spinorama import logger
+from src.spinorama.ltype import StatusOr
 
 
 pd.set_option("display.max_rows", 1000)

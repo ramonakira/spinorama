@@ -29,17 +29,17 @@ except ModuleNotFoundError:
 
 from datas import Symmetry, Parameters
 
-from spinorama import logger, ray_setup_logger
-from spinorama.ltype import DataSpeaker
-from spinorama.constant_paths import MEAN_MIN, MEAN_MAX
+from src.spinorama import logger, ray_setup_logger
+from src.spinorama.ltype import DataSpeaker
+from src.spinorama.constant_paths import MEAN_MIN, MEAN_MAX
 
-from spinorama.filter_peq import Peq, peq_apply_measurements
-from spinorama.filter_scores import noscore_apply_filter
+from src.spinorama.filter_peq import Peq, peq_apply_measurements
+from src.spinorama.filter_scores import noscore_apply_filter
 
-from spinorama.compute_misc import unify_freq
-from spinorama.compute_estimates import compute_sensitivity, compute_sensitivity_details
+from src.spinorama.compute_misc import unify_freq
+from src.spinorama.compute_estimates import compute_sensitivity, compute_sensitivity_details
 
-from spinorama.misc import (
+from src.spinorama.misc import (
     graph_melt,
     graph_unmelt,
     check_nan,
@@ -47,19 +47,19 @@ from spinorama.misc import (
     measurements_complete_freq,
     measurements_complete_spl,
 )
-from spinorama.load_klippel import parse_graphs_speaker_klippel
-from spinorama.load_princeton import parse_graphs_speaker_princeton
-from spinorama.load_rew_text_dump import parse_graphs_speaker_rew_text_dump
-from spinorama.load_rew_eq import parse_eq_iir_rews
-from spinorama.load_spl_hv_txt import parse_graphs_speaker_spl_hv_txt
-from spinorama.load_gll_hv_txt import parse_graphs_speaker_gll_hv_txt
-from spinorama.load_webplotdigitizer import parse_graphs_speaker_webplotdigitizer
+from src.spinorama.load_klippel import parse_graphs_speaker_klippel
+from src.spinorama.load_princeton import parse_graphs_speaker_princeton
+from src.spinorama.load_rew_text_dump import parse_graphs_speaker_rew_text_dump
+from src.spinorama.load_rew_eq import parse_eq_iir_rews
+from src.spinorama.load_spl_hv_txt import parse_graphs_speaker_spl_hv_txt
+from src.spinorama.load_gll_hv_txt import parse_graphs_speaker_gll_hv_txt
+from src.spinorama.load_webplotdigitizer import parse_graphs_speaker_webplotdigitizer
 
-from spinorama.constant_paths import (
+from src.spinorama.constant_paths import (
     MIDRANGE_MIN_FREQ,
     MIDRANGE_MAX_FREQ,
 )
-from spinorama.compute_cea2034 import (
+from src.spinorama.compute_cea2034 import (
     early_reflections,
     vertical_reflections,
     horizontal_reflections,

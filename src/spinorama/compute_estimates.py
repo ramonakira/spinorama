@@ -19,14 +19,14 @@ import math
 import numpy as np
 import pandas as pd
 
-from spinorama import logger
-from spinorama.constant_paths import (
+from src.spinorama import logger
+from src.spinorama.constant_paths import (
     MIDRANGE_MIN_FREQ,
     MIDRANGE_MAX_FREQ,
     SENSITIVITY_MIN_FREQ,
     SENSITIVITY_MAX_FREQ,
 )
-from spinorama.compute_misc import compute_directivity_deg_v2, compute_slope_smoothness
+from src.spinorama.compute_misc import compute_directivity_deg_v2, compute_slope_smoothness
 
 pd.set_option("display.max_rows", 1000)
 

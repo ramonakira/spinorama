@@ -20,9 +20,9 @@ import math
 import numpy as np
 import pandas as pd
 
-from spinorama import logger
-from spinorama.ltype import Vector
-from spinorama.filter_iir import Biquad, DEFAULT_Q_HIGH_LOW_PASS
+from src.spinorama import logger
+from src.spinorama.ltype import Vector
+from src.spinorama.filter_iir import Biquad, DEFAULT_Q_HIGH_LOW_PASS
 
 # declare type here to prevent circular dependencies
 Peq = list[tuple[float, Biquad]]
