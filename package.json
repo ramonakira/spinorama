@@ -30,6 +30,7 @@
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "format": "prettier",
-    "oxlint": "npx oxlint@latest"
+    "oxlint": "npx oxlint@latest",
+    "generateSW": "workbox generateSW workbox-config.js"
   }
 }

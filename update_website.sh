@@ -19,6 +19,7 @@
 echo "Update starts"
 mkdir -p build/website
 export PYTHONPATH=src:src/website:src/spinorama:.
+export NUMEXPR_MAX_THREADS=8
 
 IP="127.0.0.1"
 case $HOSTNAME in
@@ -60,7 +61,7 @@ fi
 # generate all graphs if some are missing
 mkdir -p build/ray
 rm -rf /tmp/ray && ln -s ~/Projects/spinorama/build/ray /tmp
-command=$(python3 ./generate_graphs.py --dash-ip="$IP")
+command=$(python3 ./generate_graphs.py --smoke-test=random --log-level=debug --dash-ip="$IP")
 status=$?
 if [ $status -ne 0 ]; then
     echo "KO after generate graph!"
@@ -178,7 +179,7 @@ else
     echo "OK after generate HTML!"
 fi
 
-command=$(workbox generateSW workbox-config.js)
+command=$(npm run generateSW)
 status=$?
 if [ $status -ne 0 ]; then
     echo "KO after generateSWL!"
