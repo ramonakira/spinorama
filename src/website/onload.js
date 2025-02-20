@@ -56,13 +56,16 @@ window.onload = () => {
 
     const filters = document.querySelector('#filters-dropdown');
     if (filters) {
+        console.log('filters')
         const trigger = filters.querySelector('#filters-dropdown-trigger');
         const menu = filters.querySelector('#filters-dropdown-menu');
         if (!trigger || !menu) {
+            console.log('not')
             console.log('error dropdown trigger+menu not found!');
         }
         trigger.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
+            console.log('yep')
+            filters.classList.toggle('is-active');
         });
     }
 
